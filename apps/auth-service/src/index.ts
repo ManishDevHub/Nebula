@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 
 
-app.use("/api/user", router);
+app.use("/api/auth", router);
 
 app.listen(PORT, () => {
   console.log(`Auth service is running on port ${PORT}`);
