@@ -14,7 +14,7 @@ const SERVICES = {
   NOTIFICATION: process.env.NOTIFICATION_SERVICE_URL || "http://localhost:7000",
 };
 
-const JWT_SECRET = process.env.JWTSECRET || "djhfjkladjfalkjdfgkjdfgkjdfgkjdfg";
+const JWT_SECRET = process.env.JWTSECRET || "djhfjkladjfalkjdfgkjdfgkj";
 
 app.use("*", logger());
 app.use("*", timeout(5000));
@@ -76,5 +76,6 @@ app.all("/api/notification/*", (c) => handleProxy(SERVICES.NOTIFICATION, c));
 
 export default {
   port: process.env.PORT || 8001,
+
   fetch: app.fetch,
 };
