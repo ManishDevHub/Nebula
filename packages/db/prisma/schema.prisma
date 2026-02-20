@@ -13,10 +13,125 @@ datasource db {
   provider = "postgresql"
 }
 
+
+// Enums
+
+enum PaymentStatus {
+  CREATED   
+  PENDING
+  SUCCESS
+  FAILED
+  REFUNDED
+}
+
+enum RefundStatus {
+  PENDING
+  SUCCESS
+  FAILED
+}
+
+
+//Models
 model User {
   id    String @id @default(uuid())
   email String @unique
   name  String?
   password String
   
+}
+
+// Payment Model
+
+
+model Payment {
+  id                    String    @id     @default(uuid())
+  userId                String
+  orderId               String
+  amount                BigInt
+  currency              String             @default("INR")
+  status                PaymentStatus       @default(PENDING)
+  provider               String?           @default("razorpay")
+  providerOrderId        String?    @unique
+  providerPaymentId      String     @unique
+
+  idempotencyKey        String     @unique
+  webhookEventId         String?    @unique
+  failureReason          String?
+
+  createdAt              DateTime @default(now())
+  updatedAt              DateTime @updatedAt
+
+  refund                 Refund[]
+  ledgerEntrys           LedgerEntry[]
+  outBoxEvents           OutBoxEvent[]
+
+  @@index([userId])
+  @@index([orderId])
+  @@index([status])
+  @@index([providerOrderId])
+} 
+
+
+model Refund {
+  id              String   @id  @default(uuid())
+  paymentId      String
+  amount         BigInt
+  status         RefundStatus @default(PENDING)
+  providerRefundId String? @unique
+  failureReason   String?
+
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  payment         Payment @relation(fields: [paymentId], references: [id] , onDelete: Cascade)
+
+  @@index([paymentId])
+}
+
+// WEBHOOK LOG
+
+model WebhookLog {
+  id            String   @id  @default(uuid())
+  provider       String
+  eventId        String   @unique
+  eventType      String
+  payload        Json
+ processed    Boolean  @default(false)
+ createdAt      DateTime @default(now())
+
+@@index([eventType])
+@@index([processed])
+}
+
+// OUTBOX PATTERN (FOR RABBITMQ)
+model OutBoxEvent {
+
+  id         String    @id   @default(uuid())
+  aggregateId   String
+  aggregateType String
+  eventType   String
+  
+  payload     Json
+  processed   Boolean   @default(false)
+  retryCount  Int       @default(0)
+  createdAt   DateTime  @default(now())
+  processedAt DateTime?
+  payments    Payment[]
+  @@index([processed])
+  @@index([aggregateId])
+  
+}
+
+model LedgerEntry {
+  id           String    @id  @default(uuid())
+  paymentId    String
+
+  debit       BigInt
+  credit     BigInt
+  account   String?
+
+  createdAt   DateTime  @default(now())
+  payment      Payment  @relation(fields: [paymentId],references: [id], onDelete: Cascade)
+
+  @@index([paymentId])
 }
