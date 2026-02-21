@@ -12,7 +12,7 @@ export async function createPayment(c:any) {
     const body = await c.req.json();
     const { amount , orderId } = body;
 
-    const idempotencyKey = c.req.headers.get("Idempotency-Key") || uuid();
+const idempotencyKey = c.req.header("idempotency-key") || uuid();
 
     if(!idempotencyKey) {
         return c.json({ error: "Idempotency-Key is required" }, { status: 400 });

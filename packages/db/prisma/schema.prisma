@@ -52,7 +52,7 @@ model Payment {
   status                PaymentStatus       @default(PENDING)
   provider               String?           @default("razorpay")
   providerOrderId        String?    @unique
-  providerPaymentId      String     @unique
+  providerPaymentId      String?     @unique
 
   idempotencyKey        String     @unique
   webhookEventId         String?    @unique

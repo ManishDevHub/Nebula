@@ -15,4 +15,3 @@ Bun.serve({
 
 
 console.log(`Payment service running on port ${env.PORT}`);
-app
