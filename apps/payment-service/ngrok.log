@@ -23,3 +23,46 @@
 {"lvl":"info","msg":"using configuration at default config path","path":"C:\\Users\\Rudra\\AppData\\Local/ngrok/ngrok.yml","t":"2026-02-21T23:46:49.8611937+05:30"}
 {"err":"\u003cnil\u003e","lvl":"info","msg":"open config file","path":"C:\\Users\\Rudra\\AppData\\Local\\ngrok\\ngrok.yml","t":"2026-02-21T23:46:49.8611937+05:30"}
 {"enabled":false,"lvl":"info","msg":"FIPS 140 mode","t":"2026-02-21T23:46:49.862194+05:30"}
+{"addr":"127.0.0.1:4040","allow_hosts":null,"lvl":"info","msg":"starting web service","obj":"web","t":"2026-02-21T23:46:49.9597587+05:30"}
+{"lvl":"info","msg":"client session established","obj":"tunnels.session","t":"2026-02-21T23:46:51.7508391+05:30"}
+{"lvl":"info","msg":"tunnel session started","obj":"tunnels.session","t":"2026-02-21T23:46:51.7508391+05:30"}
+{"addr":"http://localhost:4002","lvl":"info","msg":"started tunnel","name":"command_line","obj":"tunnels","t":"2026-02-21T23:46:52.1360013+05:30","url":"https://tess-preworldly-glancingly.ngrok-free.dev"}
+{"id":"bcbab418501ddb04","lvl":"info","msg":"start","pg":"/api/tunnels","t":"2026-02-21T23:47:25.0238773+05:30"}
+{"dur":"560.6µs","id":"bcbab418501ddb04","lvl":"info","msg":"end","pg":"/api/tunnels","status":200,"t":"2026-02-21T23:47:25.0244379+05:30"}
+{"id":"accd0cedeaa1c11f","lvl":"info","msg":"start","pg":"/api/tunnels","t":"2026-02-21T23:47:55.8388952+05:30"}
+{"dur":"0s","id":"accd0cedeaa1c11f","lvl":"info","msg":"end","pg":"/api/tunnels","status":200,"t":"2026-02-21T23:47:55.8388952+05:30"}
+{"id":"60db35bcd07d964a","lvl":"info","msg":"start","pg":"/","t":"2026-02-22T00:01:04.2470652+05:30"}
+{"dur":"0s","id":"60db35bcd07d964a","lvl":"info","msg":"end","pg":"/","status":302,"t":"2026-02-22T00:01:04.2470652+05:30"}
+{"id":"124f7bb49a9d90d8","lvl":"info","msg":"start","pg":"/inspect/http","t":"2026-02-22T00:01:04.2588104+05:30"}
+{"dur":"3.2991ms","id":"124f7bb49a9d90d8","lvl":"info","msg":"end","pg":"/inspect/http","status":200,"t":"2026-02-22T00:01:04.2621095+05:30"}
+{"id":"af7910ed89db8612","lvl":"info","msg":"start","pg":"/static/css/app.DttJnHmJ.css","t":"2026-02-22T00:01:04.4054616+05:30"}
+{"id":"bb1aa7247b091fb7","lvl":"info","msg":"start","pg":"/static/js/app.DzFqJQXQ.js","t":"2026-02-22T00:01:04.4088952+05:30"}
+{"dur":"123.1563ms","id":"af7910ed89db8612","lvl":"info","msg":"end","pg":"/static/css/app.DttJnHmJ.css","status":200,"t":"2026-02-22T00:01:04.5286179+05:30"}
+{"dur":"129.728ms","id":"bb1aa7247b091fb7","lvl":"info","msg":"end","pg":"/static/js/app.DzFqJQXQ.js","status":200,"t":"2026-02-22T00:01:04.5386232+05:30"}
+{"id":"657ea76513306013","lvl":"info","msg":"start","pg":"/grpc/agent.Web/Preloaded","t":"2026-02-22T00:01:04.7802806+05:30"}
+{"id":"ba35e92af3891651","lvl":"info","msg":"start","pg":"/grpc/agent.Web/State","t":"2026-02-22T00:01:04.7879782+05:30"}
+{"dur":"18.4487ms","id":"657ea76513306013","lvl":"info","msg":"end","pg":"/grpc/agent.Web/Preloaded","status":200,"t":"2026-02-22T00:01:04.7987293+05:30"}
+{"id":"b6bba3da138c0942","lvl":"info","msg":"start","pg":"/static/favicon.ico","t":"2026-02-22T00:01:05.2906061+05:30"}
+{"dur":"0s","id":"b6bba3da138c0942","lvl":"info","msg":"end","pg":"/static/favicon.ico","status":200,"t":"2026-02-22T00:01:05.2906061+05:30"}
+{"dur":"10m16.7428061s","id":"ba35e92af3891651","lvl":"info","msg":"end","pg":"/grpc/agent.Web/State","status":200,"t":"2026-02-22T00:11:21.5307843+05:30"}
+{"clientid":"3b0985ccf1ac123c334bbb92e6a4bc86","id":"afb519a37a98","lvl":"eror","msg":"heartbeat timeout, terminating session","obj":"csess","t":"2026-02-22T00:35:37.7285442+05:30"}
+{"err":"session closed","id":"c7a8765bcd59","lvl":"eror","msg":"session closed, starting reconnect loop","obj":"csess","t":"2026-02-22T00:35:37.7391858+05:30"}
+{"err":"failed to dial ngrok server with address \"connect.ngrok-agent.com:443\": dial tcp: lookup connect.ngrok-agent.com: i/o timeout","lvl":"eror","msg":"failed to reconnect session","obj":"tunnels.session","t":"2026-02-22T00:35:47.7500584+05:30"}
+{"err":"failed to dial ngrok server with address \"connect.ngrok-agent.com:443\": dial tcp: lookup connect.ngrok-agent.com: i/o timeout","lvl":"eror","msg":"failed to reconnect session","obj":"tunnels.session","t":"2026-02-22T00:35:58.2586518+05:30"}
+{"err":"failed to dial ngrok server with address \"connect.ngrok-agent.com:443\": dial tcp: lookup connect.ngrok-agent.com: no such host","lvl":"eror","msg":"failed to reconnect session","obj":"tunnels.session","t":"2026-02-22T00:35:59.3545122+05:30"}
+{"err":"failed to dial ngrok server with address \"connect.ngrok-agent.com:443\": dial tcp: lookup connect.ngrok-agent.com: no such host","lvl":"eror","msg":"failed to reconnect session","obj":"tunnels.session","t":"2026-02-22T00:36:01.4003655+05:30"}
+{"err":"failed to dial ngrok server with address \"connect.ngrok-agent.com:443\": dial tcp: lookup connect.ngrok-agent.com: no such host","lvl":"eror","msg":"failed to reconnect session","obj":"tunnels.session","t":"2026-02-22T00:36:05.4081358+05:30"}
+{"err":"failed to dial ngrok server with address \"connect.ngrok-agent.com:443\": dial tcp: lookup connect.ngrok-agent.com: no such host","lvl":"eror","msg":"failed to reconnect session","obj":"tunnels.session","t":"2026-02-22T00:36:13.4703052+05:30"}
+{"err":"failed to dial ngrok server with address \"connect.ngrok-agent.com:443\": dial tcp: lookup connect.ngrok-agent.com: no such host","lvl":"eror","msg":"failed to reconnect session","obj":"tunnels.session","t":"2026-02-22T00:36:29.4796812+05:30"}
+{"err":"failed to dial ngrok server with address \"connect.ngrok-agent.com:443\": dial tcp: lookup connect.ngrok-agent.com: no such host","lvl":"eror","msg":"failed to reconnect session","obj":"tunnels.session","t":"2026-02-22T00:36:59.4903611+05:30"}
+{"err":"failed to dial ngrok server with address \"connect.ngrok-agent.com:443\": dial tcp: lookup connect.ngrok-agent.com: no such host","lvl":"eror","msg":"failed to reconnect session","obj":"tunnels.session","t":"2026-02-22T00:37:29.5073781+05:30"}
+{"err":"failed to dial ngrok server with address \"connect.ngrok-agent.com:443\": dial tcp: lookup connect.ngrok-agent.com: i/o timeout","lvl":"eror","msg":"failed to reconnect session","obj":"tunnels.session","t":"2026-02-22T00:38:09.5188604+05:30"}
+{"err":"failed to dial ngrok server with address \"connect.ngrok-agent.com:443\": dial tcp: lookup connect.ngrok-agent.com: no such host","lvl":"eror","msg":"failed to reconnect session","obj":"tunnels.session","t":"2026-02-22T00:38:39.5332585+05:30"}
+{"err":"failed to dial ngrok server with address \"connect.ngrok-agent.com:443\": dial tcp: lookup connect.ngrok-agent.com: i/o timeout","lvl":"eror","msg":"failed to reconnect session","obj":"tunnels.session","t":"2026-02-22T00:39:19.5344131+05:30"}
+{"lvl":"info","msg":"client session established","obj":"tunnels.session","t":"2026-02-22T00:39:50.1793808+05:30"}
+{"lvl":"info","msg":"tunnel session started","obj":"tunnels.session","t":"2026-02-22T00:39:50.1799315+05:30"}
+{"clientid":"3b0985ccf1ac123c334bbb92e6a4bc86","id":"6bf8f15b7ef4","lvl":"eror","msg":"heartbeat timeout, terminating session","obj":"csess","t":"2026-02-22T00:40:14.6021283+05:30"}
+{"err":"session closed","id":"c7a8765bcd59","lvl":"eror","msg":"session closed, starting reconnect loop","obj":"csess","t":"2026-02-22T00:40:14.6031316+05:30"}
+{"err":"failed to send authentication request: failed to fetch CRL. errors encountered: timed out fetching CRL","lvl":"eror","msg":"failed to reconnect session","obj":"tunnels.session","t":"2026-02-22T00:40:24.681002+05:30"}
+{"lvl":"info","msg":"client session established","obj":"tunnels.session","t":"2026-02-22T00:40:25.7994016+05:30"}
+{"lvl":"info","msg":"tunnel session started","obj":"tunnels.session","t":"2026-02-22T00:40:25.7994016+05:30"}

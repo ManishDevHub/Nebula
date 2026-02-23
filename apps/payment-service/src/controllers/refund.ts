@@ -8,7 +8,7 @@ import { publishEvent } from "../events/publisher";
 export async function refundPaymet(c:any) {
 
     const paymentId = c.req.param("id");
-    const body = c.req.json();
+    const body = await c.req.json();
 
     const { amount } = body;
 
@@ -58,7 +58,6 @@ await publishEvent("payment.refund.requested", {
     paymentId: payment.id,
     refundId: refund.id,
     amount: amount,
-}
-)
+});
 return c.json(refund);
 }

@@ -3,7 +3,7 @@ import Redis from "ioredis";
 import { env } from "../config/env";
 import { json } from "node:stream/consumers";
 
-const redis = new Redis(env.RADIS_URL);
+const redis = new Redis(env.REDIS_URL);
 
 export async function checkIdempotency(key: string) {
 
