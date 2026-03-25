@@ -7,9 +7,12 @@
     "@types/bun": "latest"
   },
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "^6.0.2"
   },
   "dependencies": {
+    "@hono/node-server": "^1.19.11",
+    "@types/typescript": "^2.0.0",
+    "hono": "^4.12.9",
     "pino": "^10.3.1"
   }
 }

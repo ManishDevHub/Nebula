@@ -144,3 +144,30 @@ model Notification {
   status        String   @default("PENDING")
   createdAt     DateTime @default(now())
 }
+
+
+// monitoring 
+
+model Log {
+  id       String  @id   @default(uuid())
+  service  String  
+  level    String
+  message  String
+ createdAt DateTime @default(now())
+}
+
+model Metric {
+  id        String   @id @default(uuid())
+  service   String
+  name      String
+  value     Float
+  createdAt DateTime @default(now())
+}
+
+model Alert {
+  id        String   @id @default(uuid())
+  type      String
+  message   String
+  severity  String
+  createdAt DateTime @default(now())
+}

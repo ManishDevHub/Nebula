@@ -1,5 +1,5 @@
 
-import  prisma  from "../../../../packages/db/lib/prisma";
+import    prisma   from "../../../../packages/db/lib/prisma.ts";
 
 export const createLog = async (data: {
   service: string;
