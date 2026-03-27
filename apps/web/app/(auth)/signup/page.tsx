@@ -33,17 +33,13 @@ export default function AuthPage() {
           
           {/* Signup Fields */}
           {!isLogin && (
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid gap-4">
               <input
                 type="text"
-                placeholder="First Name"
+                placeholder="Full Name"
                 className="rounded-xl bg-white/5 border border-white/10 p-3 outline-none focus:border-indigo-500"
               />
-              <input
-                type="text"
-                placeholder="Last Name"
-                className="rounded-xl bg-white/5 border border-white/10 p-3 outline-none focus:border-indigo-500"
-              />
+            
             </div>
           )}
 
@@ -63,20 +59,28 @@ export default function AuthPage() {
 
           {/* Button */}
           <button className="w-full rounded-xl bg-indigo-600 p-3 font-bold hover:bg-indigo-500 transition">
-            {isLogin ? "Login" : "Sign Up"}
+            Sign Up
           </button>
         </form>
 
         {/* Toggle */}
-        <p className="text-center text-sm text-gray-400">
-          {isLogin ? "New here?" : "Already have an account?"}
+        {/* <p className="text-center text-sm text-gray-400">
+           "Already have an account?"
+           <a href="/login"></a>
 
           <button
             onClick={() => setIsLogin(!isLogin)}
             className="ml-2 text-indigo-400 font-bold hover:underline"
           >
-            {isLogin ? "Create account" : "Login"}
+           
           </button>
+        </p> */}
+
+        <p className="text-center text-sm text-gray-400">
+          
+           "Already have an account?"
+           <a href="/login"> login</a>
+
         </p>
       </div>
     </div>
