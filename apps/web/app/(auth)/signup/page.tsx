@@ -18,13 +18,13 @@ export default function AuthPage() {
         {/* Heading */}
         <div className="text-center">
           <h2 className="text-4xl font-extrabold">
-            {isLogin ? "Welcome Back" : "Create Account"}
+            Create Account
           </h2>
 
           <p className="mt-3 text-sm text-gray-400">
-            {isLogin
-              ? "Enter your details to access your account"
-              : "Join our community today"}
+            
+             
+              Join our community today
           </p>
         </div>
 
@@ -32,7 +32,7 @@ export default function AuthPage() {
         <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
           
           {/* Signup Fields */}
-          {!isLogin && (
+          
             <div className="grid gap-4">
               <input
                 type="text"
@@ -41,7 +41,7 @@ export default function AuthPage() {
               />
             
             </div>
-          )}
+        
 
           {/* Email */}
           <input
@@ -63,25 +63,13 @@ export default function AuthPage() {
           </button>
         </form>
 
-        {/* Toggle */}
-        {/* <p className="text-center text-sm text-gray-400">
-           "Already have an account?"
-           <a href="/login"></a>
-
-          <button
-            onClick={() => setIsLogin(!isLogin)}
-            className="ml-2 text-indigo-400 font-bold hover:underline"
-          >
-           
-          </button>
-        </p> */}
-
         <p className="text-center text-sm text-gray-400">
           
            "Already have an account?"
-           <a href="/login"> login</a>
+           <a href="/login"> Login </a>
+           </p>
 
-        </p>
+        
       </div>
     </div>
   );

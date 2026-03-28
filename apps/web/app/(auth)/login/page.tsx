@@ -18,35 +18,19 @@ export default function AuthPage() {
         {/* Heading */}
         <div className="text-center">
           <h2 className="text-4xl font-extrabold">
-            {isLogin ? "Welcome Back" : "Create Account"}
+            Welcome Back
           </h2>
 
           <p className="mt-3 text-sm text-gray-400">
-            {isLogin
-              ? "Enter your details to access your account"
-              : "Join our community today"}
+            
+               "Enter your details to access your account"
+              {/* : "Join our community today"} */}
           </p>
         </div>
 
         {/* Form */}
         <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
           
-          {/* Signup Fields */}
-          {!isLogin && (
-            <div className="grid grid-cols-2 gap-4">
-              <input
-                type="text"
-                placeholder="First Name"
-                className="rounded-xl bg-white/5 border border-white/10 p-3 outline-none focus:border-indigo-500"
-              />
-              <input
-                type="text"
-                placeholder="Last Name"
-                className="rounded-xl bg-white/5 border border-white/10 p-3 outline-none focus:border-indigo-500"
-              />
-            </div>
-          )}
-
           {/* Email */}
           <input
             type="email"
@@ -63,21 +47,20 @@ export default function AuthPage() {
 
           {/* Button */}
           <button className="w-full rounded-xl bg-indigo-600 p-3 font-bold hover:bg-indigo-500 transition">
-            {isLogin ? "Login" : "Sign Up"}
+          Login
           </button>
         </form>
 
-        {/* Toggle */}
-        <p className="text-center text-sm text-gray-400">
-          {isLogin ? "New here?" : "Already have an account?"}
+       
+        
 
-          <button
-            onClick={() => setIsLogin(!isLogin)}
-            className="ml-2 text-indigo-400 font-bold hover:underline"
-          >
-            {isLogin ? "Create account" : "Login"}
-          </button>
+           <p className="text-center text-sm text-gray-400">
+          
+           "New here?"
+           <a href="/signup">Create account</a>
+
         </p>
+        
       </div>
     </div>
   );
