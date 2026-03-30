@@ -8,7 +8,7 @@ export default function HeroSection() {
     <section className="bg-[#0d1117] min-h-screen flex items-center px-[5%] overflow-hidden">
       <div className="max-w-[1280px] mx-auto w-full flex items-center justify-between gap-12">
 
-        {/* Left Content */}
+     
         <div className="flex-none max-w-[520px]">
           <h1 className="text-[clamp(2.5rem,5vw,4rem)] font-extrabold leading-[1.1] text-[#f5f5f0] mb-6 tracking-tight">
             Is it the server?
@@ -35,7 +35,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Right: Illustration - made bigger */}
+   
         <div className="flex-none relative w-[clamp(420px,55vw,700px)] h-[clamp(340px,46vw,580px)]">
           <Image
             src="/a.webp"

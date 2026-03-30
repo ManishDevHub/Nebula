@@ -17,8 +17,8 @@ export default function Home() {
       <PowerfulTools />
       <CrossPlatform />
       <Pricing />
-    <FreeTrial />
-    <Footer/>
+      <FreeTrial />
+      <Footer/>
     </main>
   );
 }
