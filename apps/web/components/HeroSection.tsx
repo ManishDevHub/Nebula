@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -23,11 +24,13 @@ export default function HeroSection() {
 
           <div className="flex gap-3 flex-wrap">
             <button className="bg-[#00c853] hover:bg-[#00e676] hover:-translate-y-0.5 text-black font-bold rounded-full px-7 py-3.5 text-[0.95rem] cursor-pointer transition-all duration-200 tracking-tight border-none">
-              Get Started Free
+              
+              <Link href="/signup" >Get Started Free</Link>
             </button>
 
             <button className="bg-[#1f2937] hover:bg-[#374151] text-[#f5f5f0] font-semibold rounded-full px-7 py-3.5 text-[0.95rem] cursor-pointer transition-all duration-200 tracking-tight border-none">
-              Get Demo
+              
+              <Link href="/login">Get Demo</Link>
             </button>
           </div>
         </div>
