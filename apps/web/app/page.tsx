@@ -19,6 +19,7 @@ export default function Home() {
       <Pricing />
       <FreeTrial />
       <Footer/>
+      <Footer/>
     </main>
   );
 }
