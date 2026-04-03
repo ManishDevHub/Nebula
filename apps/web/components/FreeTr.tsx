@@ -8,30 +8,30 @@ export default function FreeTrial() {
 
   return (
     <div className="bg-[#f3f3f3] min-h-screen flex items-center justify-center py-10 px-4">
-      {/* Card */}
+    
       <div className="relative bg-white rounded-2xl w-full max-w-[1300px] min-h-[520px] overflow-hidden shadow-sm flex items-center">
 
-        {/* Left content */}
+     
         <div className="relative z-10 px-16 py-16 max-w-[680px]">
 
-          {/* Heading */}
+        
           <h1 className="text-[42px] font-black text-[#111111] leading-[1.15] tracking-tight mb-6">
             Start your 15-day free<br />
             Dynatrace trial today!
           </h1>
 
-          {/* Subtext */}
+       
           <p className="text-[16px] text-[#111111] leading-[1.6] mb-7">
             You'll be up and running in under 5 minutes:<br />
             Sign up, deploy our agent and get unmatched insights out-of-the-box.
           </p>
 
-          {/* Label */}
+        
           <label className="block text-[14px] font-normal text-[#111111] mb-2">
             Business email
           </label>
 
-          {/* Input + Button row */}
+        
           <div className="flex items-stretch gap-3 mb-5">
             <input
               type="email"
@@ -46,7 +46,7 @@ export default function FreeTrial() {
             </button>
           </div>
 
-          {/* Checkbox + Terms */}
+        
           <div className="flex gap-3 items-start max-w-[620px]">
             <input
               type="checkbox"
@@ -74,7 +74,7 @@ export default function FreeTrial() {
           </div>
         </div>
 
-        {/* Blue wave — absolute right side, bleeds off */}
+      
         <div className="absolute top-0 right-0 h-full w-[42%] pointer-events-none" aria-hidden="true">
           <svg
             viewBox="0 0 520 600"
@@ -94,12 +94,12 @@ export default function FreeTrial() {
                 <stop offset="100%" stopColor="#7c86f5" stopOpacity="0.6" />
               </linearGradient>
             </defs>
-            {/* Back large wave */}
+        
             <path
               d="M180 -20 C260 60, 560 80, 540 260 C520 440, 260 480, 300 620 L560 620 L560 -20 Z"
               fill="url(#g1)"
             />
-            {/* Front lighter wave */}
+          
             <path
               d="M310 -20 C380 60, 560 160, 545 320 C530 500, 390 540, 420 620 L560 620 L560 -20 Z"
               fill="url(#g2)"

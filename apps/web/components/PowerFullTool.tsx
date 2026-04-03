@@ -7,12 +7,12 @@ export default function PowerfulTools() {
     <section className="bg-[#f0ede6] min-h-screen px-[5%] py-16 font-sans">
       <div className="max-w-[1280px] mx-auto">
 
-        {/* Heading */}
+     
         <div className="mb-12">
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold leading-tight tracking-tight">
             <span className="text-[#00a3a3] inline-flex items-center gap-2">
               Powerful tools
-              {/* Arrow icon */}
+            
               <svg
                 width="36"
                 height="36"
@@ -36,10 +36,10 @@ export default function PowerfulTools() {
           </h2>
         </div>
 
-        {/* Content Row */}
+     
         <div className="flex flex-col lg:flex-row items-start gap-12">
 
-          {/* Left: Dashboard Image */}
+        
           <div className="flex-none w-full lg:w-[55%] rounded-xl overflow-hidden shadow-2xl">
             <Image
               src="/Services.png.webp"
@@ -51,7 +51,7 @@ export default function PowerfulTools() {
             />
           </div>
 
-          {/* Right: Text Content */}
+      
           <div className="flex-1 pt-2">
             <h3 className="text-[clamp(1.6rem,2.5vw,2.2rem)] font-extrabold text-[#1a1a1a] leading-tight mb-5 tracking-tight">
               Monitor your entire stack in a snap.
@@ -87,7 +87,6 @@ export default function PowerfulTools() {
               </li>
             </ul>
           </div>
-
         </div>
       </div>
     </section>
