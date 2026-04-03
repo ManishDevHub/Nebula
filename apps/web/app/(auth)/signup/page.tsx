@@ -57,8 +57,6 @@ export default function AuthPage() {
 
         
         <form className="space-y-5" onSubmit={handleSubmit}>
-          
-          
             <div className="grid gap-4">
               <input
                 onChange={(e) => setFormData({...formData, name: e.target.value})}

@@ -11,18 +11,18 @@ export default function Navbar() {
         
       
     >
-      {/* ── Logo ── */}
+      
       <Link href="/" className="flex items-center gap-2.5 select-none">
-        {/* Drop your icon here, e.g: <Image src="/logo.svg" width={28} height={28} alt="logo" /> */}
+
 
         <span className="text-xl font-bold text-white tracking-tight">
           Nebula
         </span>
       </Link>
 
-      {/* ── Buttons ── */}
+     
       <div className="flex items-center gap-3">
-        {/* Login */}
+  
         <Link
           href="/login"
           className="px-4 py-1.5 text-sm font-medium rounded-lg border border-sky-500/50 text-sky-400 hover:bg-sky-500/10 hover:border-sky-400 transition-all duration-200"
@@ -30,7 +30,7 @@ export default function Navbar() {
           Log in
         </Link>
 
-        {/* Get Started */}
+    
         <Link
           href="/signup"
           className="px-5 py-1.5 text-sm font-semibold text-white rounded-lg bg-gradient-to-r from-emerald-500 to-green-400 shadow-md shadow-emerald-500/25 hover:brightness-110 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
