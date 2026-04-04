@@ -13,7 +13,7 @@ export default function Footer() {
 
   return (
     <footer className="relative w-full overflow-hidden bg-white">
-      {/* Wave SVG */}
+    
       <div className="w-full leading-none">
         <svg
           viewBox="0 0 1440 120"
@@ -36,7 +36,7 @@ export default function Footer() {
         </svg>
       </div>
 
-      {/* Footer body */}
+    
       <div
         style={{
           background:
@@ -44,7 +44,7 @@ export default function Footer() {
         }}
         className="w-full pt-8 pb-10 px-8"
       >
-        {/* Nav links */}
+        
         <nav className="flex flex-wrap justify-center items-center gap-x-10 gap-y-3 mb-8">
           {links.map((link) => (
             <a
@@ -68,10 +68,9 @@ export default function Footer() {
           ))}
         </nav>
 
-        {/* Divider */}
         <div className="w-full max-w-[500px] mx-auto border-t border-white/20 mb-6" />
 
-        {/* Copyright */}
+     
         <p className="text-center text-white/90 text-[14px] font-normal tracking-wide">
           © 2026 Nebula Monitoring LLC. All rights reserved.
         </p>

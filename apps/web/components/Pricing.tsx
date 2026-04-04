@@ -7,7 +7,6 @@ export default function Pricing() {
     <section className="bg-[#e8e4d9] min-h-[50vh] px-[5%] py-16 font-sans">
       <div className="max-w-[1280px] mx-auto flex flex-col lg:flex-row items-center gap-12">
 
-        {/* Left: Text Content */}
         <div className="flex-1 max-w-[480px]">
           <h2 className="text-[clamp(1.8rem,3.5vw,2.8rem)] font-extrabold text-[#1a1a1a] leading-tight mb-4 tracking-tight">
             Pay only for what you use—no shelfware and no overage penalties.
@@ -31,7 +30,7 @@ export default function Pricing() {
           </ul>
         </div>
 
-        {/* Right: Pricing Illustration Image */}
+        
         <div className="flex-none w-full lg:w-[55%]">
           <Image
             src="/doller.webp"

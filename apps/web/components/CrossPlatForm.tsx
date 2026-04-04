@@ -7,10 +7,9 @@ export default function CrossPlatform() {
     <section className="bg-[#f0ede6] min-h-screen px-[5%] py-16 font-sans">
       <div className="max-w-[1280px] mx-auto">
 
-        {/* Content Row */}
         <div className="flex flex-col lg:flex-row items-center gap-12">
 
-          {/* Left: Text Content */}
+       
           <div className="flex-1 pt-2">
             <h2 className="text-[clamp(1.8rem,3.5vw,2.8rem)] font-extrabold text-[#1a1a1a] leading-tight mb-5 tracking-tight">
               Cross-platform observability
@@ -51,7 +50,7 @@ export default function CrossPlatform() {
             </ul>
           </div>
 
-          {/* Right: Dashboard Image */}
+         
           <div className="flex-none w-full lg:w-[55%] rounded-xl overflow-hidden shadow-2xl relative">
         
             <Image
