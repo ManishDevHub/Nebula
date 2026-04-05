@@ -55,7 +55,7 @@ export default function Footer() {
               {link.label}
               {link.icon && (
                 <span className="inline-flex items-center gap-0.5 ml-1">
-                  {/* Privacy checkmark icon */}
+                 
                   <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="0.5" y="0.5" width="13" height="13" rx="6.5" stroke="white" strokeWidth="1"/>
                     <path d="M3.5 7L6 9.5L10 4.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>

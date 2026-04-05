@@ -8,8 +8,7 @@ export default function Navbar() {
   return (
     <nav
       className=" top-0 left-0 right-0 z-50 flex items-center justify-between px-8 md:px-12 h-16 transition-all duration-500"
-        
-      
+  
     >
       
       <Link href="/" className="flex items-center gap-2.5 select-none">
